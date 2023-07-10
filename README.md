@@ -13,6 +13,10 @@ but no hope lost, you can run it from DXVK vulkan linux style
 
 I suggested DXVK instead of D3D9on12 because its much easier to use and i heard from a lot of sources that it is faster.
 
+If my guide is too shitty use this gentleman's guide https://www.reddit.com/r/pcgaming/comments/mlfcsc/a_guide_to_dxvk_on_windows/  (if you hate reddit open it on libreddit or archive.org or something)
+
+
+
 download DXVK dlls from this repo https://github.com/doitsujin/dxvk/releases
 
 Unzip/untar it (you may need to unzip the tar twice)
