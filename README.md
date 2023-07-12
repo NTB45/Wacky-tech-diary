@@ -1,5 +1,5 @@
 # Wacky-tech-diary
-NTB45's diary of wacky tech stuff
+### NTB45's diary of wacky tech stuff
 This place will have all my issues and errors and if found, their fixes here
 
 I made it for small issues for which making a whole guide would be wasteful of resources
@@ -9,15 +9,15 @@ I made it for small issues for which making a whole guide would be wasteful of r
 
 ### Intel with their infinite wisdom dropped support for directX9 and below stuff on intel Arc gpus and 12th gen integrated Iris graphics and up.
 
-but no hope lost, you can run it from DXVK vulkan linux style
+but no hope lost, you can run it from **DXVK** linux style
 
-I suggested DXVK instead of D3D9on12 because its much easier to use and i heard from a lot of sources that it is faster.
+I suggested DXVK instead of **D3D9on12** because its much easier to use and i heard from a lot of sources that it is faster.
 
 If my guide is too shitty use this gentleman's guide https://www.reddit.com/r/pcgaming/comments/mlfcsc/a_guide_to_dxvk_on_windows/  (if you hate reddit open it on libreddit or archive.org or something)
 
 
 
-download DXVK dlls from this repo https://github.com/doitsujin/dxvk/releases
+download DXVK dlls from this repo's releases https://github.com/doitsujin/dxvk/releases
 
 Unzip/untar it (you may need to unzip the tar twice)
 
@@ -35,8 +35,26 @@ if you want to be sure, paste it in other places you find a .dll file to, just t
 
 and boom
 
-game running
+**game running**
 
 For me the error was that the game just launched, made a window, initialised a white screen, and crashed
 
 if yours crash after that god knows whats wrong.
+
+## TranslucentTB not working on Windows 11
+This issue appeared because microsoft changed a few things in a windows update and as the result it ducked translucenttb
+
+But no biggie, we can easily revert to the old visually and functionally identical taskbar without a lot of fuzz like downgrading and stuff.
+
+Credit goes to this guy on reddit for posting an easy fix that doesn't involve the command line 
+https://www.reddit.com/r/WindowsHelp/comments/11kyhiz/translucenttb_not_working_windows_11_version_22h2/jc8e1gg/
+
+1.  Go to the **Vivetool GUI GitHub** page: https://github.com/PeterStrick/ViVeTool-GUI/releases and download the latest version of the software.
+2.  Once the download is complete, run the installer to install **Vivetool GUI** on your computer.
+3.  After the installation is complete, open **Vivetool GUI**.
+4.  In the top left box, you will see a drop-down menu that says "Select build". Select the first build that is listed in the menu.
+5.  In the search box, type **26008830**. This is the ID of the feature that messes with TranslucentTB.
+6.  Click on the "Perform action" button and select "Deactivate feature".
+7.  Close all windows and reboot your computer.
+8. and BAM, TRANSLUCENTTB working
+Now you can do this from command line too in single copy paste solution, but i prefer more control from the gui.
