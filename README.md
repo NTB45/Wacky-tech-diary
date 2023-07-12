@@ -58,3 +58,32 @@ https://www.reddit.com/r/WindowsHelp/comments/11kyhiz/translucenttb_not_working_
 7.  Close all windows and reboot your computer.
 8. and BAM, TRANSLUCENTTB working
 Now you can do this from command line too in single copy paste solution, but i prefer more control from the gui.
+
+## How to install FIREFOX without using any other browser in Windows
+
+If you are messing around with enterprise LTSC versions or stripped down versions of Windows like tiny11, there is a good chance that edge will not be installed by default, that is a good thing, but if there is absolutely no browser preinstalled, that could be a huge problem.
+and opening internet explorer is like opening rats nest, its way too outdated to use
+But we can again, do things linux style and install browsers from the command line.
+Now there are quite a few ways to do it.
+
+But first of all open the Powershell by searching it on the start menu
+
+then putting the directory to Desktop by
+	cd Desktop
+### Curl
+Its a cross platform terminal software used for viewing and doing all sorts of stuff with http
+Curl is preinstalled on Windows 10 version 1803 or later
+curl -L "https://download.mozilla.org/?product=firefox-latest&os=win&lang=en-US" -o FirefoxSetup.exe
+
+### Wget
+Wget is the mozilla recommeded way of downloading firefox from command line
+
+wget -O FirefoxSetup.exe "https://download.mozilla.org/?product=firefox-latest&os=win&lang=en-US"
+
+### Winget
+winget is one of the new toys microsoft released to download applications from command line proper linux style
+Easiest method so far to install firefox, only if winget happens to be preinstalled in your windows installation , its sometimes preinstalled, sometimes not
+
+just go
+	winget install firefox
+and it should do the magic.
