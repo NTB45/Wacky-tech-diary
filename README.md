@@ -87,3 +87,13 @@ Easiest method so far to install firefox, only if winget happens to be preinstal
 just go
 	winget install firefox
 and it should do the magic.
+
+
+
+## Persona 4 Golden from Fitgirl repacks not Launching with Community Enhancement pack or Aemulus
+
+First, make sure mod you are installing is persona4 32bit compatable 
+
+### Then make sure the standard fitgirl compatability of running .exe as administrator from compatablity tab of it's exe's properties is disabled
+
+It should work now
