@@ -112,3 +112,5 @@ but if you have Windows 11 pro, that bastard can be removed in minute and never 
 
 *Fourth* : Click on Enabled to enable it, or Disable to disable it.
 
+For other versions of Windows refer to this website https://www.elevenforum.com/t/enable-or-disable-screen-edge-swipe-in-windows-11.3717/
+
