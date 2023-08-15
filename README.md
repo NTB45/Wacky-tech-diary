@@ -105,7 +105,10 @@ Everyone hates that useless pesky little menu that Microsoft added
 but if you have Windows 11 pro, that bastard can be removed in minute and never bother you again
 
 *First* : Open the **Local Group Policy Editor** (gpedit.msc on run).
+
 *Second* : Navigate to **Computer Configuration\Administrative Templates\Windows Components\Edge UI**​
+
 *Third* : In the right pane of **Edge UI** in the Local Group Policy Editor, double click/tap on the **Allow edge swipe** policy to edit it.
+
 *Fourth* : Click on Enabled to enable it, or Disable to disable it.
 
